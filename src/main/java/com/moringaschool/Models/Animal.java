@@ -2,13 +2,26 @@ package com.moringaschool.Models;
 
 import java.util.ArrayList;
 
-public class Animals {
+public class Animal {
     private int id;
     private String name;
-    public static ArrayList<Animals>
+    public static ArrayList<Animal> instances;
 
-    public Animals(int id, String name) {
-
+    public Animal(int id, String name) {
+        this.name = name;
+        instances.add(this);
+        this.id = getInstances().size() + 1;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public static ArrayList<Animal> getInstances() {
+        return instances;
+    }
 }
