@@ -7,10 +7,9 @@ public class Animal {
     private String name;
     public static ArrayList<Animal> instances;
 
-    public Animal(int id, String name) {
+    public Animal(String name) {
         this.name = name;
         instances.add(this);
-        this.id = getInstances().size() + 1;
     }
 
     public String getName() {
@@ -23,5 +22,9 @@ public class Animal {
 
     public static ArrayList<Animal> getInstances() {
         return instances;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
