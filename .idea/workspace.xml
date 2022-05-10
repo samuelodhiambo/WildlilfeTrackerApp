@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="patch: It IDE build files">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" afterDir="false" />
+    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="patch: It will optimize sql query string">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Database/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Database/DB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/AddAnimal.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/AddAnimal.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/AddSighting.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/AddSighting.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Endangered.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Endangered.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/moringaschool/Models/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/moringaschool/Models/AnimalTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +52,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "/home/samian/Documents/WildlifeTrackerApp/src/main/resources/templates",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "MavenSettings"
   }
@@ -87,7 +80,6 @@
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="temurin-17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.moringaschool.Main" />
       <module name="WildlifeTrackerApp" />
       <extension name="coverage">
@@ -157,8 +149,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AnimalDaoTest.addingAnimalId" />
         <item itemvalue="JUnit.AnimalDaoTest.existingAnimalCanBeFoundById" />
+        <item itemvalue="JUnit.AnimalDaoTest.addingAnimalId" />
         <item itemvalue="JUnit.AnimalDaoTest.addingCourseSetsId" />
       </list>
     </recent_temporary>
@@ -326,7 +318,91 @@
       <option name="project" value="LOCAL" />
       <updated>1652178767324</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="patch: IDE build files">
+      <created>1652185353291</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1652185353292</updated>
+    </task>
+    <task id="LOCAL-00024" summary="patch: It will add heroku plugins">
+      <created>1652185384438</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1652185384438</updated>
+    </task>
+    <task id="LOCAL-00025" summary="patch: It will rename all html to hbs files">
+      <created>1652185458190</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1652185458190</updated>
+    </task>
+    <task id="LOCAL-00026" summary="patch: It will make animal test public">
+      <created>1652185490476</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1652185490476</updated>
+    </task>
+    <task id="LOCAL-00027" summary="doc: It will create README documentation">
+      <created>1652185667232</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1652185667232</updated>
+    </task>
+    <task id="LOCAL-00028" summary="doc: It will change postresql dependency version">
+      <created>1652210606967</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1652210606967</updated>
+    </task>
+    <task id="LOCAL-00029" summary="doc: It will change animal DAO instanciation and connection string">
+      <created>1652214532825</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1652214532825</updated>
+    </task>
+    <task id="LOCAL-00030" summary="doc: It will optimize homepage animal list">
+      <created>1652214561750</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1652214561750</updated>
+    </task>
+    <task id="LOCAL-00031" summary="patch: It will add method to create tables">
+      <created>1652214597955</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1652214597955</updated>
+    </task>
+    <task id="LOCAL-00032" summary="patch: It will add db connection">
+      <created>1652214803220</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1652214803220</updated>
+    </task>
+    <task id="LOCAL-00033" summary="patch: It will change parameters for findbyid">
+      <created>1652214865165</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1652214865165</updated>
+    </task>
+    <task id="LOCAL-00034" summary="patch: It will optimize sql query string">
+      <created>1652214922164</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1652214922164</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,16 +417,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="patch: It will add a setter for id" />
-    <MESSAGE value="patch: It will implement Animal Data access object" />
-    <MESSAGE value="patch: It will create Animal DAO Interface" />
-    <MESSAGE value="patch: It will create AnimalDaoTest class" />
-    <MESSAGE value="patch: It will create Animal Test class" />
-    <MESSAGE value="patch: It will create EndangeredAnimals class" />
-    <MESSAGE value="patch: It will add project dependencies" />
-    <MESSAGE value="patch: It will optimize test for Animal DAO" />
-    <MESSAGE value="patch: It will add view for home page" />
-    <MESSAGE value="patch: It will add view for sightings page" />
     <MESSAGE value="patch: It will add view for endangered animals page" />
     <MESSAGE value="patch: It will add view for adding sightings" />
     <MESSAGE value="patch: It will add view for adding animals" />
@@ -363,6 +429,19 @@
     <MESSAGE value="patch: It will add a constructor for animal DAO" />
     <MESSAGE value="patch: It will optimzie the Animal DAO interface" />
     <MESSAGE value="patch: It IDE build files" />
-    <option name="LAST_COMMIT_MESSAGE" value="patch: It IDE build files" />
+    <MESSAGE value="patch: IDE build files" />
+    <MESSAGE value="patch: It will add heroku plugins" />
+    <MESSAGE value="patch: It will add routes for all page views" />
+    <MESSAGE value="patch: It will rename all html to hbs files" />
+    <MESSAGE value="patch: It will make animal test public" />
+    <MESSAGE value="doc: It will create README documentation" />
+    <MESSAGE value="doc: It will change postresql dependency version" />
+    <MESSAGE value="doc: It will change animal DAO instanciation and connection string" />
+    <MESSAGE value="doc: It will optimize homepage animal list" />
+    <MESSAGE value="patch: It will add method to create tables" />
+    <MESSAGE value="patch: It will add db connection" />
+    <MESSAGE value="patch: It will change parameters for findbyid" />
+    <MESSAGE value="patch: It will optimize sql query string" />
+    <option name="LAST_COMMIT_MESSAGE" value="patch: It will optimize sql query string" />
   </component>
 </project>
