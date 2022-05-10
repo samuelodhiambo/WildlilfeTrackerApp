@@ -32,9 +32,10 @@ public class Main {
         staticFileLocation("/public");
         get("/", (request, response) -> {
             Map<String, List<Animal>> model = new HashMap<>();
-
-            animalDao.add(new Animal("Rhino"));
-            animalDao.add(new Animal("Elephant"));
+            if (animalDao.findAll(con).size() == 0) {
+                animalDao.add(new Animal("Rhino"));
+                animalDao.add(new Animal("Elephant"));
+            }
 
             model.put("animals", animalDao.findAll(con));
 
@@ -53,14 +54,29 @@ public class Main {
             return new ModelAndView(model, "Sightings.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("addAnimal", (request, response) -> {
+        get("/addAnimal", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(model, "AddAnimal.hbs");
         }, new HandlebarsTemplateEngine());
+
+        post("/addHandler", (request, response) -> {
+            String name = request.queryParams("name");
+            Animal newAnimal = new Animal(name);
+            animalDao.add(newAnimal);
+            response.redirect("/");
+            return null;
+        });
 
         get("addSighting", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(model, "AddSighting.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/reset", (request, response) -> {
+            DB.purgeDB(con);
+            DB.createTables(con);
+            response.redirect("/");
+            return null;
+        });
     }
 }

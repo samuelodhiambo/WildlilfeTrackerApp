@@ -7,13 +7,11 @@
                         <div class="card mb-5">
                             <div class="card-body p-sm-5">
                                 <h2 class="text-center mb-4">Add Animal</h2>
-                                <form method="post">
+                                <form method="post" action="/addHandler">
                                     <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name"></div>
                                     <div class="mb-3"><select class="form-select">
-                                            <option value="12" selected="">This is item 1</option>
-                                            <option value="13">This is item 2</option>
-                                            <option value="14">This is item 3</option>
-                                            <option value="123">item 4</option>
+                                            <option value="safe" selected="">Safe</option>
+                                            <option value="endangered">Endangered</option>
                                         </select></div>
                                     <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
                                 </form>
