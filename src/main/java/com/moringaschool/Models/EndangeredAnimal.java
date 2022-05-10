@@ -2,20 +2,19 @@ package com.moringaschool.Models;
 
 import java.util.ArrayList;
 
-public class EndangeredAnimals {
+public class EndangeredAnimal {
     private int id;
     private String name;
     private String health;
-    public static ArrayList<EndangeredAnimals> instances;
+    public static ArrayList<EndangeredAnimal> instances;
 
-    public EndangeredAnimals(String name, String health) {
+    public EndangeredAnimal(String name, String health) {
         this.health = health;
         this.name = name;
         instances.add(this);
-        this.id = getInstances().size();
     }
 
-    public static ArrayList<EndangeredAnimals> getInstances() {
+    public static ArrayList<EndangeredAnimal> getInstances() {
         return instances;
     }
 
