@@ -34,5 +34,25 @@ public class Main {
 
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("endangered", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "Endangered.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("sightings", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "Sightings.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("addAnimal", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "AddAnimal.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("addSighting", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "AddSighting.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
