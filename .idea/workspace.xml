@@ -4,44 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="patch: It will add project dependencies">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Database/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/Navbar-Right-Links-Dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/Open Sans.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/Raleway.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/User-Tasks-and-User-Activity-Streams---List-Group-Component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/img/white rhino.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/js/SmartNavClean-1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/assets/js/SmartNavClean.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/AddAnimal.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/AddSighting.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Endangered.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
+    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="patch: It IDE build files">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/AnimalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/AnimalDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/AnimalDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/AnimalDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/EndangeredAnimals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/EndangeredAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/moringaschool/DAO/AnimalDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/moringaschool/DAO/AnimalDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/AddAnimal.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/AddAnimal.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/AddSighting.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/AddSighting.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Endangered.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Endangered.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/moringaschool/Models/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/moringaschool/Models/AnimalTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,7 +57,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/home/samian/Documents/WildlifeTrackerApp/src/main/resources/templates"
+    "last_opened_file_path": "/home/samian/Documents/WildlifeTrackerApp/src/main/resources/templates",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -87,8 +77,17 @@
       <recent name="com.moringaschool.Models" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn heroku:deploy -e" />
+      <command value="mvn compile" />
+      <command value="mvn heroku:deploy" />
+    </option>
+  </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.moringaschool.Main" />
       <module name="WildlifeTrackerApp" />
       <extension name="coverage">
@@ -149,6 +148,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.AnimalDaoTest.addingAnimalId" />
+      <item itemvalue="JUnit.AnimalDaoTest.addingCourseSetsId" />
+      <item itemvalue="JUnit.AnimalDaoTest.existingAnimalCanBeFoundById" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -216,7 +221,112 @@
       <option name="project" value="LOCAL" />
       <updated>1652084810201</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="patch: It will optimize test for Animal DAO">
+      <created>1652178172063</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178172063</updated>
+    </task>
+    <task id="LOCAL-00009" summary="patch: It will add view for home page">
+      <created>1652178209995</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178209995</updated>
+    </task>
+    <task id="LOCAL-00010" summary="patch: It will add view for sightings page">
+      <created>1652178225695</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178225695</updated>
+    </task>
+    <task id="LOCAL-00011" summary="patch: It will add view for endangered animals page">
+      <created>1652178239700</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178239700</updated>
+    </task>
+    <task id="LOCAL-00012" summary="patch: It will add view for adding sightings">
+      <created>1652178263367</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178263367</updated>
+    </task>
+    <task id="LOCAL-00013" summary="patch: It will add view for adding animals">
+      <created>1652178424652</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178424652</updated>
+    </task>
+    <task id="LOCAL-00014" summary="patch: It will add static assets for our views">
+      <created>1652178450489</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178450489</updated>
+    </task>
+    <task id="LOCAL-00015" summary="patch: It will add dataabase creation file">
+      <created>1652178471785</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178471785</updated>
+    </task>
+    <task id="LOCAL-00016" summary="patch: It will add home page route">
+      <created>1652178543966</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178543966</updated>
+    </task>
+    <task id="LOCAL-00017" summary="patch: It will overide the equals and hascode methods">
+      <created>1652178621975</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178621975</updated>
+    </task>
+    <task id="LOCAL-00018" summary="patch: It will optimize endangered animals class">
+      <created>1652178655653</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178655653</updated>
+    </task>
+    <task id="LOCAL-00019" summary="patch: It will ocreate database connection class">
+      <created>1652178674910</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178674910</updated>
+    </task>
+    <task id="LOCAL-00020" summary="patch: It will add a constructor for animal DAO">
+      <created>1652178726026</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178726026</updated>
+    </task>
+    <task id="LOCAL-00021" summary="patch: It will optimzie the Animal DAO interface">
+      <created>1652178745071</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178745071</updated>
+    </task>
+    <task id="LOCAL-00022" summary="patch: It IDE build files">
+      <created>1652178767324</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1652178767324</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,6 +348,21 @@
     <MESSAGE value="patch: It will create Animal Test class" />
     <MESSAGE value="patch: It will create EndangeredAnimals class" />
     <MESSAGE value="patch: It will add project dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="patch: It will add project dependencies" />
+    <MESSAGE value="patch: It will optimize test for Animal DAO" />
+    <MESSAGE value="patch: It will add view for home page" />
+    <MESSAGE value="patch: It will add view for sightings page" />
+    <MESSAGE value="patch: It will add view for endangered animals page" />
+    <MESSAGE value="patch: It will add view for adding sightings" />
+    <MESSAGE value="patch: It will add view for adding animals" />
+    <MESSAGE value="patch: It will add static assets for our views" />
+    <MESSAGE value="patch: It will add dataabase creation file" />
+    <MESSAGE value="patch: It will add home page route" />
+    <MESSAGE value="patch: It will overide the equals and hascode methods" />
+    <MESSAGE value="patch: It will optimize endangered animals class" />
+    <MESSAGE value="patch: It will ocreate database connection class" />
+    <MESSAGE value="patch: It will add a constructor for animal DAO" />
+    <MESSAGE value="patch: It will optimzie the Animal DAO interface" />
+    <MESSAGE value="patch: It IDE build files" />
+    <option name="LAST_COMMIT_MESSAGE" value="patch: It IDE build files" />
   </component>
 </project>
