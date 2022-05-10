@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AnimalTest {
+public class AnimalTest {
     @Test
     public void test_Animal_Class() throws Exception {
         Animal rhino = new Animal("Rhino");
