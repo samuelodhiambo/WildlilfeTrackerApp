@@ -8,7 +8,7 @@ import java.util.List;
 public interface AnimalDaoInterface {
     void add(Animal animal);
 
-    Animal findById(Connection con, int id);
+    Animal findById(int id);
 
     void update(Connection con, int id, String name);
 
