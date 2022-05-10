@@ -5,7 +5,7 @@
 - [Description](#description)
 - [Setup instructions](#setup-instructions)
 - [Technology Used](#technologies-used)
-- [Licence](#Licence)
+- [Licence](#License)
 - [Authors Info](#Authors-info)
 
 ## Description
