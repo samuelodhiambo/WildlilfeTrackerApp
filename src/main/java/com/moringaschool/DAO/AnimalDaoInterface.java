@@ -6,7 +6,13 @@ import org.sql2o.Connection;
 import java.util.List;
 
 public interface AnimalDaoInterface {
-    void add(Connection con, Animal animal);
+    void add(Animal animal);
+
+    Animal findById(Connection con, int id);
+
+    void update(Connection con, int id, String name);
 
     List<Animal> findAll(Connection con);
+
+    void deleteById(Connection con, int id);
 }
