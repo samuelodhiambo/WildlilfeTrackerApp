@@ -11,13 +11,13 @@ import org.sql2o.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AnimalDaoTest {
-    private AnimalDao animalDao; //ignore me for now. We'll create this soon.
-    private Connection conn; //must be sql2o class conn
+    private AnimalDao animalDao = new AnimalDao(DB.sql2o);
+    private Connection conn;
 
     @Before
     public void setUp() throws Exception {
-        String connectionString = "jdbc:h2:mem:testing;INIT=RUNSCRIPT from 'classpath:db/create.sql'";
-        Sql2o sql2o = new Sql2o(connectionString, "samian", "");
+        String connectionString = "jdbc:postgresql://localhost:5432/samian";
+        Sql2o sql2o = new Sql2o(connectionString, "samian", "root");
         animalDao = new AnimalDao(sql2o); //ignore me for now
         conn = sql2o.open(); //keep connection open through entire test so it does not get erased
     }
@@ -28,7 +28,7 @@ class AnimalDaoTest {
     }
     @Test
     public void addingAnimalId() throws Exception {
-        Animal animal = new Animal ("Rhino");
+        Animal animal = new Animal ("Kangaroo");
         int originalAnimalId = animal.getId();
         animalDao.add(animal);
         assertNotEquals(originalAnimalId, animal.getId());
@@ -36,9 +36,9 @@ class AnimalDaoTest {
 
     @Test
     public void existingAnimalCanBeFoundById() throws Exception {
-        Animal animal = new Animal ("Rhino");
+        Animal animal = new Animal ("Hyena");
         animalDao.add(animal); //add to dao (takes care of saving)
-        Animal foundAnimal = animalDao.findById(conn, animal.getId()); //retrieve
+        Animal foundAnimal = animalDao.findById(animal.getId()); //retrieve
         assertEquals(animal, foundAnimal); //should be the same
     }
 
