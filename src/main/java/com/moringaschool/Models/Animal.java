@@ -1,6 +1,7 @@
 package com.moringaschool.Models;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Animal {
     private int id;
@@ -9,7 +10,20 @@ public class Animal {
 
     public Animal(String name) {
         this.name = name;
-        instances.add(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Animal)) return false;
+        Animal animal = (Animal) o;
+        return getId() == animal.getId() &&
+                Objects.equals(getName(), animal.getName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getId());
     }
 
     public String getName() {
