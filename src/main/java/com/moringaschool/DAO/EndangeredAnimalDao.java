@@ -16,14 +16,15 @@ public class EndangeredAnimalDao implements EndangeredAnimalInterface{
     }
 
     @Override
-    public void add(EndangeredAnimal animal) {
-        String sql = "INSERT INTO endangeredanimals (animal_id, name, health, age) VALUES (:animal_id, :name, :health, :age)";
+    public void add(EndangeredAnimal endangeredAnimal) {
+        String sql = "INSERT INTO endangeredanimals (name, animal_id, health, age) VALUES (:name, :animal_id, :health, :age)";
         try(Connection con = DB.sql2o.open()){
+            System.out.println(con.createQuery(sql));
             int id = (int) con.createQuery(sql, true)
-                    .bind(animal)
+                    .bind(endangeredAnimal)
                     .executeUpdate()
                     .getKey();
-            animal.setId(id);
+            endangeredAnimal.setId(id);
         } catch (Sql2oException ex) {
             System.out.println("there was a problem adding the animal " + ex);
         }

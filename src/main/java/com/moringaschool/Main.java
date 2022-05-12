@@ -1,9 +1,11 @@
 package com.moringaschool;
 import com.moringaschool.DAO.AnimalDao;
 import com.moringaschool.DAO.EndangeredAnimalDao;
+import com.moringaschool.DAO.SightingDao;
 import com.moringaschool.Database.DB;
 import com.moringaschool.Models.Animal;
 import com.moringaschool.Models.EndangeredAnimal;
+import com.moringaschool.Models.Sighting;
 import org.sql2o.Connection;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
@@ -22,6 +24,8 @@ public class Main {
     static Connection con = DB.sql2o.open();
     static AnimalDao animalDao = new AnimalDao(DB.sql2o);
     static EndangeredAnimalDao endangeredAnimalDao = new EndangeredAnimalDao(DB.sql2o);
+
+    static SightingDao sightingDao = new SightingDao(DB.sql2o);
     static int getHerokuAssignedPort() {
         ProcessBuilder processBuilder = new ProcessBuilder();
         if (processBuilder.environment().get("PORT") != null) {
@@ -56,6 +60,7 @@ public class Main {
 
         get("sightings", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
+            model.put("sightings", sightingDao.findAll(con));
             return new ModelAndView(model, "Sightings.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -73,9 +78,9 @@ public class Main {
             if (endangered.equals("endangered")) {
                 int age = Integer.parseInt(request.queryParams("age"));
                 String health = request.queryParams("health");
-                EndangeredAnimal endangeredAnimal = new EndangeredAnimal(newAnimal.getId(), newAnimal.getName(), health, age);
+                EndangeredAnimal endangeredAnimal = new EndangeredAnimal(newAnimal.getName(),newAnimal.getId(), health, age);
                 endangeredAnimalDao.add(endangeredAnimal);
-                System.out.println("---------------");
+                System.out.println(newAnimal.getId() + " --------------- " + newAnimal.getName());
             }
             response.redirect("/");
             return null;
@@ -83,12 +88,29 @@ public class Main {
 
         get("addSighting", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
+            model.put("animals", animalDao.findAll(con));
             return new ModelAndView(model, "AddSighting.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/reset", (request, response) -> {
+        post("/sightHandler", (request, response) -> {
+            int animal = Integer.parseInt(request.queryParams("animal"));
+            String location = request.queryParams("location");
+            String rangerName = request.queryParams("rangerName");
+            sightingDao.add(new Sighting(animal, location, rangerName));
+            response.redirect("/sightings");
+            return null;
+        });
+
+        get("/animal/:id/delete", (request, response) -> {
             DB.purgeDB(con);
             DB.createTables(con);
+            response.redirect("/");
+            return null;
+        });
+
+        get("/reset", (request, response) -> {
+            int idOfAnimal = Integer.parseInt(request.params("id"));
+            animalDao.deleteById(con, idOfAnimal);
             response.redirect("/");
             return null;
         });

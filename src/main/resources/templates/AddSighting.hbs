@@ -7,19 +7,15 @@
                         <div class="card mb-5">
                             <div class="card-body p-sm-5">
                                 <h2 class="text-center mb-4">Add Sighting</h2>
-                                <form method="post">
-                                    <div class="mb-3"><select class="form-select">
-                                            <option value="12" selected="">This is item 1</option>
-                                            <option value="13">This is item 2</option>
-                                            <option value="14">This is item 3</option>
-                                            <option value="123">item 4</option>
+                                <form method="post" action="/sightHandler">
+                                    <div class="mb-3"><select class="form-select" name="animal">
+                                        {{#each animals}}
+                                            <option value="{{id}}">{{name}}</option>
+                                        {{/each}}
+
                                         </select></div>
-                                    <div class="mb-3"><select class="form-select">
-                                            <option value="12" selected="">This is item 1</option>
-                                            <option value="13">This is item 2</option>
-                                            <option value="14">This is item 3</option>
-                                            <option value="123">item 4</option>
-                                        </select></div>
+                                    <div class="mb-3"><input class="form-control" type="text" id="location-2" name="location" placeholder="Location"></div>
+                                    <div class="mb-3"><input class="form-control" type="text" id="ranger-2" name="rangerName" placeholder="Ranger Name"></div>
                                     <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
                                 </form>
                             </div>

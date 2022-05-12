@@ -13,11 +13,11 @@ public class EndangeredAnimal {
     private String health;
     private int age;
 
-    public EndangeredAnimal(int animal_id, String name, String health, int age) {
-        this.health = health;
-        this.name = name;
-        this.age = age;
+    public EndangeredAnimal(String name, int animal_id, String health, int age) {
         this.animal_id = animal_id;
+        this.name = name;
+        this.health = health;
+        this.age = age;
     }
 
     @Override

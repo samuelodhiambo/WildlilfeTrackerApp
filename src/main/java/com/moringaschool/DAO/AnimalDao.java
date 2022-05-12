@@ -19,6 +19,7 @@ public class AnimalDao implements AnimalDaoInterface{
     public void add(Animal animal) {
         String sql = "INSERT INTO animals (name) VALUES (:name)";
         try(Connection con = DB.sql2o.open()){
+            System.out.println(con.createQuery(sql));
             int id = (int) con.createQuery(sql, true)
                     .bind(animal) //use name and location from match object for sql
                     .executeUpdate()
