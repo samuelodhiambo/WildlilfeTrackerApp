@@ -54,6 +54,7 @@ public class SightingDao implements SightingsDaoInterface{
         try{
             return con.createQuery("SELECT * FROM sightings")
                     .executeAndFetch(Sighting.class);
+
         } catch (Exception e) {
             throw new RuntimeException();
         }

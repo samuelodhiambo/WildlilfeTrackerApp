@@ -1,11 +1,15 @@
 package com.moringaschool.Models;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.Objects;
 
 public class Sighting {
     private int animal_id;
     private String location;
     private String rangerName;
+
+    private Date time;
 
     public Sighting(int animal_id, String location, String rangerName) {
         this.animal_id = animal_id;
@@ -38,5 +42,13 @@ public class Sighting {
 
     public String getRangerName() {
         return rangerName;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
+    }
+
+    public String getTime() {
+        return DateFormat.getDateTimeInstance().format(time);
     }
 }
