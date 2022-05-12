@@ -5,6 +5,7 @@
             <div class="col">
                 <h2>Endangered Animals</h2>
                 <ul class="list-group">
+                    {{#each endangeredAnimals}}
                     <li class="list-group-item">
                         <div class="d-flex media">
                             <div class="media-body">
@@ -13,8 +14,8 @@
                                     <div style="overflow:visible;" class="media-body">
                                         <div class="row">
                                             <div class="col-10">
-                                                <h5><a href="#"><strong>Albert Anderson</strong></a></h5>
-                                                <p>Connect with Alex to discuss his recurring gift<br>
+                                                <h5><a href="#"><strong>{{name}}</strong></a></h5>
+                                                <p>{{health}}<br>
 <small class="text-muted">08/03/16 at 9:00am </small></p>
                                             </div>
                                             <div class="col-2">
@@ -28,6 +29,7 @@
                             </div>
                         </div>
                     </li>
+                    {{/each}}
                 </ul>
             </div>
         </div>

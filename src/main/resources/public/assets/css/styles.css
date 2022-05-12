@@ -1,0 +1,2 @@
+.hidden {display: none;}
+select[data-chosen='endangered'] ~ .hidden {display: block;}

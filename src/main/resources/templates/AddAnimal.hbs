@@ -9,10 +9,12 @@
                                 <h2 class="text-center mb-4">Add Animal</h2>
                                 <form method="post" action="/addHandler">
                                     <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name"></div>
-                                    <div class="mb-3"><select class="form-select">
+                                    <select class="form-select mb-3" name="endangered" onchange=" this.dataset.chosen = this.value; ">
                                             <option value="safe" selected="">Safe</option>
                                             <option value="endangered">Endangered</option>
-                                        </select></div>
+                                        </select>
+                                    <div class="mb-3 hidden"><input class="form-control" type="number" id="age-2" name="age" placeholder="Age"></div>
+                                    <div class="mb-3 hidden"><input class="form-control" type="text" id="health-2" name="health" placeholder="Health"></div>
                                     <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
                                 </form>
                             </div>
