@@ -22,7 +22,7 @@ public class DB {
         }
 
         try {
-            con.createQuery("CREATE TABLE IF NOT EXISTS sightings (animal_id INT, location VARCHAR, rangerName VARCHAR , CONSTRAINT fk_animal FOREIGN KEY(animal_id) REFERENCES animals(id) ON DELETE CASCADE) ").executeUpdate();
+            con.createQuery("CREATE TABLE IF NOT EXISTS sightings (animal_id INT, location VARCHAR, rangerName VARCHAR, time TIMESTAMP, CONSTRAINT fk_animal FOREIGN KEY(animal_id) REFERENCES animals(id) ON DELETE CASCADE) ").executeUpdate();
         } catch (Exception err) {
             throw new RuntimeException(err);
         }

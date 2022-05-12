@@ -61,6 +61,7 @@ public class Main {
         get("sightings", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("sightings", sightingDao.findAll(con));
+            model.put("animals", animalDao.findAll(con));
             return new ModelAndView(model, "Sightings.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -102,15 +103,15 @@ public class Main {
         });
 
         get("/animal/:id/delete", (request, response) -> {
-            DB.purgeDB(con);
-            DB.createTables(con);
+            int idOfAnimal = Integer.parseInt(request.params("id"));
+            animalDao.deleteById(con, idOfAnimal);
             response.redirect("/");
             return null;
         });
 
         get("/reset", (request, response) -> {
-            int idOfAnimal = Integer.parseInt(request.params("id"));
-            animalDao.deleteById(con, idOfAnimal);
+            DB.purgeDB(con);
+            DB.createTables(con);
             response.redirect("/");
             return null;
         });

@@ -18,7 +18,7 @@ public class SightingDao implements SightingsDaoInterface{
 
     @Override
     public void add(Sighting sight) {
-        String sql = "INSERT INTO sightings (animal_id, location, rangerName) VALUES (:animal_id, :location, :rangerName)";
+        String sql = "INSERT INTO sightings (animal_id, location, rangerName, time) VALUES (:animal_id, :location, :rangerName, now())";
         try(Connection con = DB.sql2o.open()){
             int id = (int) con.createQuery(sql, true)
                     .bind(sight)
