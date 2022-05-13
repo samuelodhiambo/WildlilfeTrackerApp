@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="patch: It will optimize sql query string">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="patch: It will optimize date getter format for sighting">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/moringaschool/DAO/EndangeredAnimalDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/EndangeredAnimalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/EndangeredAnimalDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/SightingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/SightingDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/SightingsDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/SightingsDaoInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Database/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Database/DB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/AddAnimal.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/AddAnimal.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/EndangeredAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Sighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,20 +50,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/home/samian/Documents/WildlifeTrackerApp/src/main/resources/templates",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/samian/Documents/WildlifeTrackerApp/src/main/resources/templates&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
@@ -140,8 +147,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EndangeredAnimalDaoTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WildlifeTrackerApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moringaschool.DAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.moringaschool.DAO" />
+      <option name="MAIN_CLASS_NAME" value="com.moringaschool.DAO.EndangeredAnimalDaoTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.EndangeredAnimalDaoTest.add" />
       <item itemvalue="JUnit.AnimalDaoTest.addingAnimalId" />
       <item itemvalue="JUnit.AnimalDaoTest.addingCourseSetsId" />
       <item itemvalue="JUnit.AnimalDaoTest.existingAnimalCanBeFoundById" />
@@ -149,6 +173,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.EndangeredAnimalDaoTest.add" />
         <item itemvalue="JUnit.AnimalDaoTest.existingAnimalCanBeFoundById" />
         <item itemvalue="JUnit.AnimalDaoTest.addingAnimalId" />
         <item itemvalue="JUnit.AnimalDaoTest.addingCourseSetsId" />
@@ -402,7 +427,49 @@
       <option name="project" value="LOCAL" />
       <updated>1652214922164</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="patch: It will optimize Add animal form">
+      <created>1652217087779</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1652217087779</updated>
+    </task>
+    <task id="LOCAL-00036" summary="IDE build files">
+      <created>1652217128738</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1652217128738</updated>
+    </task>
+    <task id="LOCAL-00037" summary="patch: It will create Sightings class">
+      <created>1652335541794</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1652335541794</updated>
+    </task>
+    <task id="LOCAL-00038" summary="patch: It will add post handler for sighting">
+      <created>1652341799132</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1652341799132</updated>
+    </task>
+    <task id="LOCAL-00039" summary="fix: It will fix delete method">
+      <created>1652343246107</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1652343246107</updated>
+    </task>
+    <task id="LOCAL-00040" summary="patch: It will optimize date getter format for sighting">
+      <created>1652344643714</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1652344643714</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,12 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="patch: It will add view for endangered animals page" />
-    <MESSAGE value="patch: It will add view for adding sightings" />
-    <MESSAGE value="patch: It will add view for adding animals" />
-    <MESSAGE value="patch: It will add static assets for our views" />
-    <MESSAGE value="patch: It will add dataabase creation file" />
-    <MESSAGE value="patch: It will add home page route" />
     <MESSAGE value="patch: It will overide the equals and hascode methods" />
     <MESSAGE value="patch: It will optimize endangered animals class" />
     <MESSAGE value="patch: It will ocreate database connection class" />
@@ -442,6 +503,12 @@
     <MESSAGE value="patch: It will add db connection" />
     <MESSAGE value="patch: It will change parameters for findbyid" />
     <MESSAGE value="patch: It will optimize sql query string" />
-    <option name="LAST_COMMIT_MESSAGE" value="patch: It will optimize sql query string" />
+    <MESSAGE value="patch: It will optimize Add animal form" />
+    <MESSAGE value="IDE build files" />
+    <MESSAGE value="patch: It will create Sightings class" />
+    <MESSAGE value="patch: It will add post handler for sighting" />
+    <MESSAGE value="fix: It will fix delete method" />
+    <MESSAGE value="patch: It will optimize date getter format for sighting" />
+    <option name="LAST_COMMIT_MESSAGE" value="patch: It will optimize date getter format for sighting" />
   </component>
 </project>

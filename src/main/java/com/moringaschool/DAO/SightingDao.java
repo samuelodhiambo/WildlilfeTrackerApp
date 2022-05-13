@@ -1,7 +1,6 @@
 package com.moringaschool.DAO;
 
 import com.moringaschool.Database.DB;
-import com.moringaschool.Models.Animal;
 import com.moringaschool.Models.Sighting;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
@@ -53,6 +52,17 @@ public class SightingDao implements SightingsDaoInterface{
     public List<Sighting> findAll(Connection con) {
         try{
             return con.createQuery("SELECT * FROM sightings")
+                    .executeAndFetch(Sighting.class);
+
+        } catch (Exception e) {
+            throw new RuntimeException();
+        }
+    }
+
+    @Override
+    public List<Sighting> findAllJoined(Connection con) {
+        try{
+            return con.createQuery("SELECT * FROM sightings INNER JOIN animals ON animals.id = sightings.animal_id")
                     .executeAndFetch(Sighting.class);
 
         } catch (Exception e) {

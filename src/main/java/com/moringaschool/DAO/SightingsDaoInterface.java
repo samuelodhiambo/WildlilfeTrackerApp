@@ -15,5 +15,7 @@ public interface SightingsDaoInterface {
 
     List<Sighting> findAll(Connection con);
 
+    List<Sighting> findAllJoined(Connection con);
+
     void deleteById(Connection con, int id);
 }

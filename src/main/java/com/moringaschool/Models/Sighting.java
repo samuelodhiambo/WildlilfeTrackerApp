@@ -9,6 +9,10 @@ public class Sighting {
     private String location;
     private String rangerName;
 
+    private String name;
+
+    private String id;
+
     private Date time;
 
     public Sighting(int animal_id, String location, String rangerName) {
@@ -50,5 +54,21 @@ public class Sighting {
 
     public String getTime() {
         return DateFormat.getDateTimeInstance().format(time);
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
     }
 }

@@ -60,7 +60,7 @@ public class Main {
 
         get("sightings", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            model.put("sightings", sightingDao.findAll(con));
+            model.put("sightings", sightingDao.findAllJoined(con));
             model.put("animals", animalDao.findAll(con));
             return new ModelAndView(model, "Sightings.hbs");
         }, new HandlebarsTemplateEngine());
@@ -79,9 +79,12 @@ public class Main {
             if (endangered.equals("endangered")) {
                 int age = Integer.parseInt(request.queryParams("age"));
                 String health = request.queryParams("health");
-                EndangeredAnimal endangeredAnimal = new EndangeredAnimal(newAnimal.getName(),newAnimal.getId(), health, age);
+                String animal_name = newAnimal.getName();
+                int animal_id = newAnimal.getId();
+                EndangeredAnimal endangeredAnimal = new EndangeredAnimal(animal_name,animal_id, health, age);
                 endangeredAnimalDao.add(endangeredAnimal);
                 System.out.println(newAnimal.getId() + " --------------- " + newAnimal.getName());
+                System.out.println(age + " ---- " + health);
             }
             response.redirect("/");
             return null;
