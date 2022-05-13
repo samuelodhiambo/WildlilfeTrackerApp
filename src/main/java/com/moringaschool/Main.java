@@ -112,6 +112,20 @@ public class Main {
             return null;
         });
 
+        get("/endangeredanimal/:id/delete", (request, response) -> {
+            int idOfAnimal = Integer.parseInt(request.params("id"));
+            endangeredAnimalDao.deleteById(con, idOfAnimal);
+            response.redirect("/endangered");
+            return null;
+        });
+
+        get("/sighting/:id/delete", (request, response) -> {
+            int idOfAnimal = Integer.parseInt(request.params("id"));
+            sightingDao.deleteById(con, idOfAnimal);
+            response.redirect("/sightings");
+            return null;
+        });
+
         get("/reset", (request, response) -> {
             DB.purgeDB(con);
             DB.createTables(con);

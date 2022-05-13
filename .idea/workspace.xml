@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="patch: It will optimize date getter format for sighting">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/moringaschool/DAO/EndangeredAnimalDaoTest.java" afterDir="false" />
+    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="prod: It will change db connection string for production">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/EndangeredAnimalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/EndangeredAnimalDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/SightingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/SightingDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/SightingsDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/SightingsDaoInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Database/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Database/DB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/EndangeredAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Sighting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Endangered.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Endangered.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -469,7 +463,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652344643714</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fix: It will fix parameter error for adding endangered animal">
+      <created>1652439383097</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1652439383097</updated>
+    </task>
+    <task id="LOCAL-00042" summary="prod: It will change db connection string for production">
+      <created>1652439527317</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1652439527317</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,8 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="patch: It will overide the equals and hascode methods" />
-    <MESSAGE value="patch: It will optimize endangered animals class" />
     <MESSAGE value="patch: It will ocreate database connection class" />
     <MESSAGE value="patch: It will add a constructor for animal DAO" />
     <MESSAGE value="patch: It will optimzie the Animal DAO interface" />
@@ -509,6 +515,8 @@
     <MESSAGE value="patch: It will add post handler for sighting" />
     <MESSAGE value="fix: It will fix delete method" />
     <MESSAGE value="patch: It will optimize date getter format for sighting" />
-    <option name="LAST_COMMIT_MESSAGE" value="patch: It will optimize date getter format for sighting" />
+    <MESSAGE value="fix: It will fix parameter error for adding endangered animal" />
+    <MESSAGE value="prod: It will change db connection string for production" />
+    <option name="LAST_COMMIT_MESSAGE" value="prod: It will change db connection string for production" />
   </component>
 </project>

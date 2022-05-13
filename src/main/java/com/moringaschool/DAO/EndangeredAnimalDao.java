@@ -65,6 +65,11 @@ public class EndangeredAnimalDao implements EndangeredAnimalInterface{
 
     @Override
     public void deleteById(Connection con, int id) {
-
+        try{
+            con.createQuery("DELETE FROM endangeredanimals WHERE id=:id").addParameter("id", id).executeUpdate();
+        } catch (Exception e) {
+            System.out.println(e);
+            throw new RuntimeException();
+        }
     }
 }
