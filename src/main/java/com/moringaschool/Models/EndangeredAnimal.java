@@ -24,16 +24,14 @@ public class EndangeredAnimal {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof EndangeredAnimal)) return false;
-        EndangeredAnimal animal = (EndangeredAnimal) o;
-        return getId() == animal.getId() &&
-                Objects.equals(getAnimal_name(), animal.getAnimal_name());
+        EndangeredAnimal that = (EndangeredAnimal) o;
+        return getId() == that.getId() && getAnimal_id() == that.getAnimal_id() && getAge() == that.getAge() && getAnimal_name().equals(that.getAnimal_name()) && getHealth().equals(that.getHealth());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getAnimal_name(), getId());
+        return Objects.hash(getId(), getAnimal_id(), getAnimal_name(), getHealth(), getAge());
     }
-
 
     public String getAnimal_name() {
         return animal_name;

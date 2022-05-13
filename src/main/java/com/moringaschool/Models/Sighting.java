@@ -13,6 +13,19 @@ public class Sighting {
 
     private String id;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Sighting)) return false;
+        Sighting sighting = (Sighting) o;
+        return getAnimal_id() == sighting.getAnimal_id() && getLocation().equals(sighting.getLocation()) && getRangerName().equals(sighting.getRangerName()) && getName().equals(sighting.getName()) && getId().equals(sighting.getId()) && getTime().equals(sighting.getTime());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getAnimal_id(), getLocation(), getRangerName(), getName(), getId(), getTime());
+    }
+
     private Date time;
 
     public Sighting(int animal_id, String location, String rangerName) {
@@ -21,20 +34,6 @@ public class Sighting {
         this.rangerName = rangerName;
     }
 
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Sighting)) return false;
-        Sighting animal = (Sighting) o;
-        return getLocation() == animal.getLocation() &&
-                Objects.equals(getLocation(), animal.getLocation());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getLocation(), getLocation());
-    }
 
     public int getAnimal_id() {
         return animal_id;

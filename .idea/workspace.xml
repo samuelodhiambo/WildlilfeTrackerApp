@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="prod: It will change db connection string for production">
+    <list default="true" id="35b3eeb8-3f0e-47de-9952-c84078b36749" name="Changes" comment="patch: It will add deletion routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/EndangeredAnimalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/DAO/EndangeredAnimalDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Database/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Database/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Endangered.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Endangered.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Sightings.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/EndangeredAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moringaschool/Models/Sighting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -477,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652439527317</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="patch: It will add deletion routes">
+      <created>1652469507022</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1652469507023</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -492,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="patch: It will ocreate database connection class" />
     <MESSAGE value="patch: It will add a constructor for animal DAO" />
     <MESSAGE value="patch: It will optimzie the Animal DAO interface" />
     <MESSAGE value="patch: It IDE build files" />
@@ -517,6 +522,7 @@
     <MESSAGE value="patch: It will optimize date getter format for sighting" />
     <MESSAGE value="fix: It will fix parameter error for adding endangered animal" />
     <MESSAGE value="prod: It will change db connection string for production" />
-    <option name="LAST_COMMIT_MESSAGE" value="prod: It will change db connection string for production" />
+    <MESSAGE value="patch: It will add deletion routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="patch: It will add deletion routes" />
   </component>
 </project>
